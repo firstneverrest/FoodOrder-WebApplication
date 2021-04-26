@@ -1,0 +1,43 @@
+.Header {
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+
+    &-logo {
+    }
+  }
+
+  &__img {
+    height: calc(100vh - 6rem);
+    position: relative;
+
+    &-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &-text {
+      @include absCenter;
+      color: $color-white;
+      font-family: $header-font;
+      font-size: 7rem;
+      z-index: 3;
+    }
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background-color: rgba(0, 0, 0, 0.5);
+      // display: block for making img center
+      //   display: block;
+      //   margin-left: auto;
+      //   margin-right: auto;
+    }
+  }
+}
