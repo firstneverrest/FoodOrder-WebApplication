@@ -1,0 +1,12 @@
+.Meals {
+  &__summary {
+    margin: 3rem ;
+    display: grid;
+    place-items: center;
+
+    &-text {
+      font-weight: 500;
+      color: $color-primary;
+    }
+  }
+}
