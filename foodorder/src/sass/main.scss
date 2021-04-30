@@ -7,11 +7,13 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/card";
-@import "components/tooltip";
 @import "components/meals";
 @import "components/App";
 @import "components/AvailableMeals";
+
+@import "UI/card";
+@import "UI/tooltip";
+@import "UI/modal";
 
 @import "layout/footer";
 @import "layout/header";

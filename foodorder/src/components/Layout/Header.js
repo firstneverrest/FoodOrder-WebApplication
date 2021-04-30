@@ -1,4 +1,4 @@
-import react, {Fragment} from 'react'
+import {Fragment} from 'react'
 
 import mealsImage from '../../assets/img/meals.jpg'
 import HeaderCartButton from './HeaderCartButton'
