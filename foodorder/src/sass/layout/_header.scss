@@ -1,8 +1,14 @@
 .Header {
   &__nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
     display: flex;
     justify-content: space-between;
     padding: 2rem 2.5rem;
+    background-color: $color-white;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
 
     &-logo {
@@ -10,7 +16,7 @@
   }
 
   &__img {
-    height: calc(100vh - 6rem);
+    height: 100vh;
     position: relative;
 
     &-overlay {

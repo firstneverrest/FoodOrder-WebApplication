@@ -11,15 +11,20 @@ const MealItemForm = (props) => {
 
     const enteredAmount = amountInputRef.current.value;
     const enteredAmountNumber = +enteredAmount;
-
+    
     if (
       enteredAmount.trim().length === 0 ||
       enteredAmountNumber < 1 ||
-      enteredAmount > 5
+      enteredAmountNumber > 5
     ) {
+      
       setAmountIsValid(false);
       return;
     }
+    // console.log('%c MealItemForm', 'color: yellow; font-weight: bold');
+    // console.log(enteredAmount);
+    // console.log(enteredAmountNumber);
+    props.onAddToCart(enteredAmountNumber);
   };
 
   return (
@@ -36,8 +41,8 @@ const MealItemForm = (props) => {
           defaultValue: "1",
         }}
       />
-      <button>Add to cart</button>
-      {amountIsValid && <p>Please enter a valid amount (1-5).</p>}
+      <button type="submit">Add to cart</button>
+      {!amountIsValid && <p>Please enter a valid amount (1-5).</p>}
     </form>
   );
 };

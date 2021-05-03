@@ -5,12 +5,11 @@ import AvailableMeals from './AvailableMeals'
 
 const Meals = () => {
 
-
     return (
-        <Fragment>
+        <div className="Meals">
             <MealsSummary />
             <AvailableMeals />
-        </Fragment>
+        </div>
     )
 }
 

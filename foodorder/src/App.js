@@ -1,10 +1,9 @@
-import react, { useState, Fragment } from "react";
+import { useState } from "react";
 
 import "./sass/main.scss";
 import Header from "./components/Layout/Header";
 import Meals from "./components/Meals/Meals";
 import Cart from "./components/Cart/Cart";
-import CartContext from "./store/CartProvider";
 import CartProvider from "./store/CartProvider";
 
 function App() {
